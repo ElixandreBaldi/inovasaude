@@ -1,0 +1,10 @@
+span.big-glyphicon {
+    font-size: 200px;
+}
+.button-icon {
+    color: #0f0f0f;
+    text-decoration: none;
+}
+a.button-icon:hover {
+    text-decoration: black;
+}

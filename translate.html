@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Article-List.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
+    <link rel="stylesheet" href="assets/css/Sidebar-Menu.css">
+    <link rel="stylesheet" href="assets/css/Sidebar-Menu1.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body style="background-color:rgb(251,251,252);">
+    <div id="wrapper">
+        <div id="sidebar-wrapper" style="background-color:rgb(251,251,252);color:rgb(7,7,7);">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"> <a href="#" style="color:rgb(4,4,4);">Home </a></li>
+                <li>
+                  <a href="#TRADUTOR" style="color:rgb(3,3,3);">Tradutor </a>
+                  <a href="#CHEGANDO" style="color:rgb(3,3,3);">Chegando no País</a>
+                  <a href="#ENTENDENDO" style="color:rgb(3,3,3);">Entendendo o SUS</a>
+                  <a href="#ONDEIR" style="color:rgb(3,3,3);">Onde ir</a>
+                  <a href="#QUEMPROCURAR" style="color:rgb(3,3,3);">Quem Procurar</a>
+                  <a href="#DICIONARIO" style="color:rgb(3,3,3);">Dicionário </a>
+                </li>
+            </ul>
+        </div>
+        <div class="page-content-wrapper">
+            <div class="container-fluid"><a class="btn btn-link" role="button" href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars"></i></a>
+                <div class="row">
+                    <div id="TRADUTOR" class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+                        <div class="page-header">
+                            <div class="row">
+                                <h1>TRADUTOR </h1>
+                            </div>
+                        </div>
+                        <div class="page-body">
+                            <div class="row">
+                                <div class="col-md-offset-1 col-md-3">
+                                    <span class="big-glyphicon">
+                                        <a href="#" class="button-icon">
+                                            <i class="fa fa-microphone"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="col-md-8">
+                                    <form>
+                                        <div class="form-group">
+                                            <div>
+                                                <label>Escreva (Ingles)</label>
+                                                <textarea class="form-control text-area-translate" rows="6" aria-label="..."></textarea>
+                                            </div>
+                                            <div style="margin-top:10px;" class="col-md-12">
+                                                <div class="col-md-6">
+                                                    <button class="btn btn-primary col-md-12" onclick="invert()">
+                                                        <span class="glyphicon glyphicon-sort"></span> Inverter
+                                                    </button>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <button class="btn btn-primary col-md-12" onclick="translates()">
+                                                        <span class="glyphicon glyphicon-play"></span> Traduzir Portugues
+                                                        Traduzir Ingles
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div style="margin-top: 10px">
+                                                <label>Traduçao (Portugues)</label>
+                                                <textarea class="form-control text-area-translate" readonly rows="6" aria-label="..."></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="assets/js/Sidebar-Menu.js"></script>
+</body>
+<script>
+    var firstLanguage = 'Portugues';
+    var secondLanguage = 'Ingles';
+
+    var invert = function () {
+        var tmp = firstLanguage;
+        firstLanguage = secondLanguage;
+        secondLanguage = firstLanguage;
+
+        alert("teste");
+    };
+
+    var translates = function() {
+        alert("teste2");
+    };
+</script>
+
+</html>

@@ -29,17 +29,17 @@
         <div class="container">
             <div class="row articles">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 item">
-                    <a href="untitled.html"><img src="assets/img/Bandeira_do_Brasil.png" alt="Brasil" height="200"></a>
+                    <a href="pt-br/"><img src="assets/img/Bandeira_do_Brasil.png" alt="Brasil" height="200"></a>
                     <h3 class="name">Português </h3>
                     <p class="description">Portuguese</p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 item">
-                    <a href="#"><img src="assets/img/usa_flag_png.png" height="200"></a>
+                    <a href="en/"><img src="assets/img/usa_flag_png.png" height="200"></a>
                     <h3 class="name">Inglês </h3>
                     <p class="description">English </p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 item">
-                    <a href="#"><img src="assets/img/Flag_of_France.png" height="200"></a>
+                    <a href="fr/"><img src="assets/img/Flag_of_France.png" height="200"></a>
                     <h3 class="name">Francês </h3>
                     <p class="description">French </p>
                 </div>

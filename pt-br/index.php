@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Untitled</title>
+    <title><?=$language->titlePage?></title>
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/css/Article-List.css">
@@ -24,11 +24,11 @@
         </div>
         <div class="collapse navbar-collapse" id="navcol-1">
           <ul class="nav navbar-nav">
-            <li role="presentation"><a href="#TRADUTOR">Tradutor</a></li>
-            <li role="presentation"><a href="#CHEGANDO">Chegando no País</a></li>
-            <li role="presentation"><a href="#ENTENDENDO">Entendendo o SUS</a></li>
-            <li role="presentation"><a href="#ONDEIR">Onde ir</a></li>
-            <li role="presentation"><a href="#DICIONARIO">Dicionário</a></li>
+            <li role="presentation"><a href="#TRADUTOR"><?=$language->titleTranslate?></a></li>
+            <li role="presentation"><a href="#CHEGANDO"><?=$language->arrivingCountry?></a></li>
+            <li role="presentation"><a href="#ENTENDENDO"><?=$language->understandingSus?></a></li>
+            <li role="presentation"><a href="#ONDEIR"><?=$language->whereGo?></a></li>
+            <li role="presentation"><a href="#DICIONARIO"><?=language->dictionary?></a></li>
           </ul>
         </div>
       </div>
@@ -36,7 +36,7 @@
   </header>
   <div class="container" style="margin-top:70px;">
     <div id="TRADUTOR">
-      <h1>TRADUTOR </h1>
+      <h1><?=$language->titleTranslate?></h1>
         <div class="form-group">
           <form action="index.php" method="post">
             <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
@@ -73,15 +73,15 @@
     </div>
     <div id="CHEGANDO" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="page-header">
-          <h1>Chegando no País</h1>
+          <h1><?=$language->arrivingCountry?></h1>
       </div>
-      <p>Para que seja realizado qualquer atendimento é necessario o cartao SUS.</p>
-      <h1>Cartão SUS</h1><img class="img-responsive" src="../assets/img/SUS.png">
-      <h1>Documentos Necessários</h1>
-      <p>Para a emissão do Cartão SUS é nessário comparecer ao posto de saude mais proximo com os seguintes documentos</p>
+      <p><?=$language->arriveText?></p>
+      <h1><?=$language->SUScard?></h1><img class="img-responsive" src="../assets/img/SUS.png">
+      <h1><?=$language->necessaryDocuments?></h1>
+      <p><?=$language->necessaryText?></p>
       <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"><img src="../assets/img/rg.jpg" width="100%">
-              <p>RG/CPF</p>
+              <p><?=$language->rgcpf?></p>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"><img src="../assets/img/AutorizacaoImpressaPassaporte_ID1.jpg" width="100%">
               <p>PASSAPORTE </p>
@@ -93,23 +93,23 @@
     </div>
     <div id="ENTENDENDO" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="page-header">
-          <h1>Entendendo o SUS</h1>
+          <h1><?=$language->understandingSus?></h1>
       </div>
-      <p>O Sistema Único de Saúde (SUS) é um dos maiores sistemas públicos de saúde do mundo. Ele abrange desde o simples atendimento ambulatorial até o transplante de órgãos, garantindo acesso integral, universal e gratuito para toda a população do país. </p>
+      <p><?=$language->understandingText?></p>
     </div>
     <div id="ONDEIR" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <div class="col-md-6">
           <div class="col-md-12">
-                  <h1>Onde Ir (TOLEDO)</h1>
+                  <h1><?=$language->whereGo?></h1>
                   <div id="map" style="width:500px;height:500px;background:yellow"></div>
           </div>
       </div>
       <div class="col-md-6">
           <div id="QUEMPROCURAR" class="col-md-12">
-                  <h1>Quem Procurar</h1>
+                  <h1><?=$language->kilogram?></h1>
               <ul>
                   <li>
-                      Emergência
+                      <?=$language->emergency?>
                       <ul>
                           <li> <a href="#QUEMPROCURAR" onclick="markerButtomUpas()">UPA </a> </li>
                           <li> <a href="#QUEMPROCURAR" onclick=""> MINI HOSPITAL</a></li>
@@ -126,15 +126,15 @@
       </div>
     </div>
     <div id="DICIONARIO" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h1>Dicionário</h1>
+            <h1><?=$language->dictionary?></h1>
 
-      <h1>Sintomas </h1>
+      <h1><?=$language->symptoms?> </h1>
       <p>Paragraph</p>
-      <h1>Corpo Humano</h1>
+      <h1><?=$language->humanBody?></h1>
       <p>Paragraph</p>
-      <h1>Medicações </h1>
+      <h1><?=$language->medications?></h1>
       <p>Paragraph</p>
-      <h1>Doenças </h1>
+      <h1><?=$language->diseases?></h1>
       <p>Paragraph</p>
     </div>
   </div>
